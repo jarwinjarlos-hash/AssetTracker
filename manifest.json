@@ -1,0 +1,51 @@
+{
+  "name": "Asset Tracker",
+  "short_name": "AssetTracker",
+  "start_url": "My_Asset.html",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#3b82f6",
+  "orientation": "any",
+  "description": "Your personal multi-currency portfolio to track assets and dividends offline.",
+  "icons": [
+    { "src": "icons/icon-72x72.png", "type": "image/png", "sizes": "72x72" },
+    { "src": "icons/icon-96x96.png", "type": "image/png", "sizes": "96x96" },
+    { "src": "icons/icon-128x128.png", "type": "image/png", "sizes": "128x128" },
+    { "src": "icons/icon-144x144.png", "type": "image/png", "sizes": "144x144" },
+    { "src": "icons/icon-152x152.png", "type": "image/png", "sizes": "152x152" },
+    { "src": "icons/icon-192x192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "icons/icon-512x512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "screenshots": [
+    {
+      "src": "images/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop Dashboard View"
+    },
+    {
+      "src": "images/screenshot-mobile.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile Tracker View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Transaction",
+      "short_name": "New Tx",
+      "description": "Log a new asset transaction",
+      "url": "/My_Asset.html?action=add-transaction",
+      "icons": [{ "src": "icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Add Dividend",
+      "short_name": "New Dividend",
+      "description": "Log a new dividend payment",
+      "url": "/My_Asset.html?action=add-dividend",
+      "icons": [{ "src": "icons/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
+}

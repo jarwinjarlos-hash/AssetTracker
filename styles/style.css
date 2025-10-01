@@ -1,0 +1,72 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.modal {
+    transition: opacity 0.25s ease;
+}
+.modal-content {
+    transition: transform 0.25s ease;
+}
+.tab-button.active {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+.dark .tab-button.active {
+    border-color: #60a5fa;
+    color: #60a5fa;
+}
+.toggle-icon {
+    transition: transform 0.2s ease-in-out;
+}
+.rotate-90 {
+    transform: rotate(90deg);
+}
+.summary-filter-btn.active {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* NEW: Toast Notification Styles */
+.toast {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%);
+}
+.toast.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.toast.success {
+    background-color: #10b981;
+}
+.toast.error {
+    background-color: #ef4444;
+}
+.toast.info {
+    background-color: #3b82f6;
+}
+
+/* NEW: Table Sorting Styles */
+.summary-sort-header {
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+.summary-sort-header .sort-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    opacity: 0.3;
+}
+.summary-sort-header.sort-asc .sort-icon::after {
+    content: '▲';
+}
+.summary-sort-header.sort-desc .sort-icon::after {
+    content: '▼';
+}
+.summary-sort-header.sort-asc .sort-icon,
+.summary-sort-header.sort-desc .sort-icon {
+    opacity: 1;
+}
